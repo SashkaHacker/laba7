@@ -26,7 +26,6 @@ if __name__ == '__main__':
           f" положительного числа: {summ}")
 
     # преобразование списка
-    lst = [3.0, 2.0, 9.0, 10.5, 11.9]
     a, b = int(input("Введите а: ")), int(input("Введите b: "))
     new_lst = sorted(lst, key=lambda x: int(x) >= a <= b, reverse=True)
     print(new_lst)
