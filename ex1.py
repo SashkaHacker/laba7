@@ -10,4 +10,4 @@ if __name__ == "__main__":
         if i < 0 and i % 7 == 0:
             count.append(i)
 
-    print(f'Количество элементов: {len(count)}. Сумма элементов: {sum(count)}.')
+    print(f'Количество элементов:{len(count)}. Сумма элементов:{sum(count)}.')
