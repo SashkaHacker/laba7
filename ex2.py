@@ -6,12 +6,10 @@
 if __name__ == '__main__':
     lst = [float(s) for s in input().split()]
     # решение 1-ой задачи
-    maxx = lst[1]
-    for i in lst:
-        if abs(i) > abs(maxx):
-            maxx = i
+    abs_lst = [abs(i) for i in lst]
+    maxx = max(abs_lst)
     print(f"Номер максимального по модулю элемента списка: "
-          f"{lst.index(maxx) + 1}")
+          f"{abs_lst.index(maxx) + 1}")
 
     # решение 2-ой задачи
     summ = 0
@@ -26,5 +24,5 @@ if __name__ == '__main__':
 
     # преобразование списка
     a, b = int(input("Введите а: ")), int(input("Введите b: "))
-    new_lst = sorted(lst, key=lambda x: int(x) >= a <= b, reverse=True)
+    new_lst = sorted(lst, key=lambda x: int(x) <= a or int(x) >= b)
     print(new_lst)
