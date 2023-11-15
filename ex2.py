@@ -4,8 +4,7 @@
 # Вариант 11
 
 if __name__ == '__main__':
-    lst = [float(input("Введите элемент списка: "))
-           for i in range(int(input("Введите длину списка: ")))]
+    lst = [float(s) for s in input().split()]
     # решение 1-ой задачи
     maxx = lst[1]
     for i in lst:

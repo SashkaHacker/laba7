@@ -4,7 +4,7 @@
 # Вариант 11
 
 if __name__ == "__main__":
-    A = [int(input()) for _ in range(10)]
+    A = [int(s) for s in input().split()]
     count = []
     for i in A:
         if i < 0 and i % 7 == 0:
